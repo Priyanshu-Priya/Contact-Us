@@ -1,0 +1,5 @@
+#######Redirection Code Start from http to https#####
+#RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#######Redirection Code end from http to https#####
